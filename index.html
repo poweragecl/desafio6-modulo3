@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valores monedas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    
+
+
+    <div class="wrapper">
+
+        <h1>Conversor de Moneda</h1>    
+
+        <div class="form-row">
+            <input id="clpAmount" type="number" name="amount" placeholder="CLP a convertir" min="0" pattern="[0-9]+">
+        
+        
+        <select name="currency" id="currency" placeholder="Transformar a">
+            <option value="">-</option>
+            <option value="dolar">Dolar</option>
+            <option value="euro">Euro</option>
+            <option value="utm">UTM</option>
+            <option value="ivp">IVP</option>
+        </select>
+    
+        <button id="transform">Convertir</button>
+    
+        </div>
+
+        <div id="convertedCurrency"></div>
+        
+        <div>
+            <canvas id="myChart"></canvas>
+        </div>
+    
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/assets/js/miindicador.js"></script>
+    <script src="/assets/js/scripts.js"></script>
+
+</body>
+</html>
